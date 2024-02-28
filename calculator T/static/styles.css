@@ -1,0 +1,59 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://graphicriver.img.customer.envatousercontent.com/files/86232890/Calculator%20a%20background590.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=118c4613229b3fd26e5834b0f5d44ff5'); /* Add your background image here */
+
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.display {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #666;
+    color: white;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; /* Increased gap between buttons */
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #888;
+    color: white;
+    cursor: pointer;
+}
+
+.operator {
+    background-color: #ff6633;
+}
+
+button:hover {
+    background-color: #555;
+}

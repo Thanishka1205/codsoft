@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2><b>CALCULATOR</b></h2>
+        <form action="/calculate" method="POST">
+            <input type="number" name="num1" placeholder="Enter first number" required><br><br>
+            <input type="number" name="num2" placeholder="Enter second number" required><br><br>
+            <select name="operation" required>
+                <option value="---"></option>
+                <option value="add">Addition (+)</option>
+                <option value="subtract">Subtraction (-)</option>
+                <option value="multiply">Multiplication (*)</option>
+                <option value="divide">Division (/)</option>
+            </select><br><br>
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+</body>
+</html>
